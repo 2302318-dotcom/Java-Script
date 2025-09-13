@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+   
+    <h1>JavaScript String Operators</p>
+    <p>Note that strings are compared alphabetically:</p>
+
+<p id="demo"></p>
+
+<script>
+    let text1 = "20";
+    let text2 = "5";
+    let result = text1 < text2;
+    document.getElementById("demo").innerHTML = "Is 20 less than 5?" + result;
+    </script>
+
+    <h2>JavaScript Comparisons</h2>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="19" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let voteable;
+  let age = Number(document.getElementById("age").value);
+  if (isNaN(age)) {
+    voteable = "Input is not a number";
+  } else {
+    voteable = (age < 19) ? "Old is enough" : " The Old is ready";
+  }
+  document.getElementById("demo").innerHTML = voteable + " to vote";
+}
+
+</script>
+</body>
+</html>

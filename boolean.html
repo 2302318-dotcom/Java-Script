@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Example</title>
+    <style>
+         body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+        }
+        #message {
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid purple;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1> Booleans Example</h1>
+    <button onclick="toggleMessage()">Toggle Message</button>
+    <div id="message">WELCOME </div>
+
+    <script>
+        // Declare a boolean variable
+        let isVisible = false; // Change this to true or false to test
+
+        function toggleMessage() {
+            // Toggle the boolean value
+            isVisible = !isVisible;
+
+            // Get the element to show/hide
+            const messageElement = document.getElementById("message");
+
+            // Check the boolean value and show/hide the message
+            if (isVisible) {
+                messageElement.style.display = "block";  // Show the message
+            } else {
+                messageElement.style.display = "none";   // Hide the message
+            }
+        }
+    </script>
+</body>
+</html>
